@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    padding: 20px 100px 0 100px;    
+}
+
+.conteudo {
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa-texto {
+    width: 600px;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 120px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo {
+    width: 80px;
+}
+
+h2 {
+    color: #333;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+span {
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 16px;
+}
+
+button {
+    background-color: #017143;
+    color: #fff;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.starbucks {
+    width: 300px;
+
+}
+
+.botao {
+    width: 60px;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    
+}
+
+.botao:hover {
+    transform: translateY(-15px);
+}
+
+.circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: circle(600px at right 700px);
+    z-index: -1;
+    background-color: #017143;
+}
+
+@media(max-width: 1200px) {
+    .conteudo {
+        flex-direction: column;
+    }
+
+    .caixa-imagem {
+        justify-content: center;
+        margin-top: 0;
+        transform: translateY(30px);
+        
+}
+
+.starbucks {
+    width: 200px;
+    
+}
+
+.circle {
+    position: absolute;
+    clip-path: circle(170px);
+    top: 400px;
+    height: 420px;
+    
+    
+}
+
+.menu {
+    transform: translateY(75px);
+    display: flex;
+    width: 100%;
+}
+
+}
+
+@media(max-width: 620px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    .caixa-texto {
+        text-align: center;
+        padding: 0 30px 0 60px;
+    }
+
+    .logo {
+        position: relative;
+        left: 40%;
+    }
+
+    
+
+}
+
+@media (max-width: 500px) {
+    .menu {
+        transform: translateY(180px);
+    }
+
+    
+
+    p {
+        font-size: 0.9em;
+    }
+    .caixa-texto {
+        padding: 0 30px 0 100px;
+    }
+}
